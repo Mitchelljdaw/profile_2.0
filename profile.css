@@ -1,0 +1,181 @@
+body{
+  font-family: 'Ubuntu', monospace;
+  background-image: url("background.jpeg");
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+  background-size: auto;
+	animation: animatedBackground 250s linear;
+  text-shadow: 2px 2px black;
+}
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+.navbar-brand{
+  font-size: 50px;
+  color: white !important;
+  padding-bottom: 20px;
+}
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  z-index: 201;
+}
+.fa{
+  font-size: 25px;
+}
+#projects{
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
+}
+#return{
+  opacity: .7;
+}
+.projects{
+  margin-left: -15px;
+  width: 102.50%;
+  text-align: left;
+  vertical-align: middle;
+  opacity: .5;
+  height: 28.3%;
+  font-size: 50px;
+  background-color: black;
+  background: linear-gradient(to right, black 50%, grey 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition: .6s ease;
+  -webkit-tranformation: .6s ease;
+}
+.projects:hover{
+  cursor: pointer;
+  opacity: .7;
+  background-position:right bottom;
+}
+.projects p{
+  opacity: 1;
+}
+.projects a{
+  color: white;
+}
+#project:hover{
+  background-color: black;
+  background-position:left bottom;
+  opacity: .5;
+}
+
+#project3{
+  height:31%;
+}
+#project2{
+  height:31%;
+}
+.pages{
+  position: fixed;
+  display: none;
+  width: 96%;
+  height: 100%;
+  z-index: 250;
+}
+#battle{
+  background-color: white;
+}
+#hiddenWeb{
+  display: none;
+  position: fixed;
+  width:5%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+}
+}
+.vertical{
+  transform: rotate(90deg);
+  vertical-align: bottom;
+}
+.vertical{
+	float: left;
+}
+.letters{
+  transition: .22s ease;
+  -webkit-tranformation: 1s ease-in-out;
+   display: inline-block;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@media only screen and (max-width: 770px) {
+  .fa{
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar{
+    position: static;
+    background-color: black;
+    opacity: .6;
+  }
+  .navbar-brand{
+    font-size: 35px;
+  }
+  .fa{
+    margin-left: 35px;
+  }
+  #title{
+    margin-left: 70px;
+  }
+  #project{
+    display: none;
+  }
+  .projects{
+    height: 35%;
+  }
+  #hiddenWeb{
+    width: 13%;
+  }
+  .pages{
+    width: 89%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .navbar{
+    position: static;
+    background-color: black;
+    opacity: .6;
+  }
+  #project{
+    display: none;
+  }
+  .projects{
+    height: 35%;
+    width:90%;
+  }
+  .navbar-brand{
+    font-size: 90px;
+    margin-top: 5%;
+  }
+  .fa{
+    font-size: 70px;
+    padding: 10px;
+    margin-left: 45px;
+  }
+  #title{
+    margin-left: 250px;
+    font-size: 25px;
+  }
+  #hiddenWeb{
+    width: 13%;
+  }
+  .pages{
+    width: 89%;
+  }
+}
